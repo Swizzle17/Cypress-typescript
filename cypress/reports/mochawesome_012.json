@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-04T14:36:28.865Z",
+    "end": "2023-07-04T14:36:34.989Z",
+    "duration": 6124,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eff1e7c9-2c45-4ea2-8460-4d7ff5594fe7",
+      "title": "",
+      "fullFile": "cypress/integration/checkout.ts",
+      "file": "cypress/integration/checkout.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Test Checkout Process",
+          "fullTitle": "Test Checkout Process",
+          "timedOut": null,
+          "duration": 4429,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();\ndashboardPage.addToCart();\ncheckoutPage.goToCart();\ncheckoutPage.verifyCartPage();\ncheckoutPage.clickCheckout();\ncheckoutPage.fillFirstName('Irene');\ncheckoutPage.fillLastName('Cindy');\ncheckoutPage.fillPostalCode('16913');\ncheckoutPage.clickContinue();\ncheckoutPage.verifyCheckoutOverview();\ncheckoutPage.clickFinish();\ncheckoutPage.verifyOrderConfirmation();",
+          "err": {},
+          "uuid": "b684e4a8-a977-420b-adda-2ab1f45cf908",
+          "parentUUID": "eff1e7c9-2c45-4ea2-8460-4d7ff5594fe7",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "b684e4a8-a977-420b-adda-2ab1f45cf908"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 4429,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

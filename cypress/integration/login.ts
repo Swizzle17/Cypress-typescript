@@ -1,5 +1,5 @@
-import {LoginPage} from "./pages/login_pages"
-import {DashboardPage} from "./pages/dashboard_pages"
+import {LoginPage} from "./pages/login_page"
+import {DashboardPage} from "./pages/dashboard_page"
 
 let loginPage = new LoginPage()
 let dashboardPage = new DashboardPage()
